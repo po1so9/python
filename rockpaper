@@ -1,0 +1,54 @@
+import random
+
+while True:
+    choices = ["rock", "paper", "scissors"]
+    comp = random.choice(choices)
+#print(comp)
+
+    player = None
+    while player not in choices:
+        player = (input("Rock, Paper or Scissors? : ")).lower()
+    if player == comp:
+        print("Player:", player)
+        print("Computer:", comp)
+        print("Its a Tie!!")
+
+    #player chooses rock
+    elif player == "rock":
+        if comp == "scissors":
+            print("Player:", player)
+            print("Computer:", comp)
+            print("You Win!!!")
+        if comp == "paper":
+            print("Player:", player)
+            print("Computer:", comp)
+            print("You Lose!!!")
+
+        # player chooses paper
+    elif player == "paper":
+        if comp == "rock":
+            print("Player:", player)
+            print("Computer:", comp)
+            print("You Win!!!")
+        if comp == "scissors":
+            print("Player:", player)
+            print("Computer:", comp)
+            print("You Lose!!!")
+
+        # player chooses scissor
+    elif player == "scissors":
+        if comp == "paper":
+            print("Player:", player)
+            print("Computer:", comp)
+            print("You Win!!!")
+        if comp == "rock":
+            print("Player:", player)
+            print("Computer:", comp)
+            print("You Lose!!!")
+
+    #Restart check
+    restart = input("Want to play Again (Yes/No): ").lower()
+    if (restart != "yes"):
+        break
+print("Good Bye!!")
+
