@@ -1,0 +1,340 @@
+
+
+########################################################################################################################
+
+
+#def printWord(s):
+
+ #   s = s.split(' ')
+
+    # iterate in words of string
+#    for word in s:
+
+ #       # if length is even
+#        if len(word) % 2 == 0:
+#            print(word)
+#s = input("Enter the sentence: ")
+#printWord(s)
+
+########################################################################################################################
+
+
+
+
+########################################################################################################################
+
+lst = []
+n = int(input("Enter the number: "))
+count1, count2 = 0, 0
+for i in range(n):
+    ele = int(input(f"Enter {i+1} element:"))
+
+for ele in lst:
+    if ele % 2 == 0:
+        count1 += 1
+    else:
+        count2 += 1
+print(f"Num of evens are {count1}")
+print(f"Num of odds are {count2}")
+########################################################################################################################
+
+
+
+
+########################################################################################################################
+
+#lst = []
+#n = int(input("Enter the number of elements: "))
+#for i in range(n):
+  #  ele = int(input())
+ #for ele in lst:
+   # if (ele%2 !=0):
+  #      list[ele]
+ #       print(ele)
+#print(lst)
+########################################################################################################################
+
+
+
+
+
+
+
+########################################################################################################################
+
+#list = []
+
+#try:
+ #   n = int(input("Enter number of elements : "))
+  #  count = 0
+   #    ele = int(input())
+    #    list.append(ele)
+    #count = sum(list)
+    #avg = count/n
+    #print(avg)
+    #print(count)
+#except ValueError:
+ #   print("Please enter a number")
+
+########################################################################################################################
+
+
+
+
+
+
+
+
+
+
+####################################################################################################################
+
+
+#from collections import Counter #(for counter)
+
+#lst = [15, 6, 7, 10, 12, 20, 10, 28, 10]
+#x = 10
+# m = lst.count(x)
+#m = Counter(lst)
+
+#count = 0
+#for i in lst:
+ #   if (i==x):
+  #      count = count+1
+
+#print(f"{x} appears {m[x]} times in the list")  #(use it with counter function)
+
+#print(f"{x} appears {m} times in the list")    #(use it with lst.count)
+
+#print(f"{x} appears {count} times in the list")  #(use it native method (loops))
+
+
+
+
+#####################################################################################################################
+
+
+
+
+
+
+###################################################################################
+#input_list = [1, 2, 2, 5, 8, 4, 4, 8]
+
+# converting our list to set
+#new_set = set(input_list)
+#print("No of unique items in the list are:", len(new_set))
+#print(new_set)
+
+
+###################################################################################
+
+
+
+
+
+
+
+
+
+#####################################################################################
+#Searching a word in a letter:
+
+
+#a = input("Enter the element you want to search: ")
+
+#list =['ahaha', 'car', 'heyy', 'hello']
+#for i in list:
+ #   if (i == a):
+  #      print(f"Exist at {list.index(a)}")
+       # if('hello' in list):
+        #    print("Exisrt sfsfsf")
+
+
+#########################################################################################
+
+
+
+
+
+
+
+
+########################################################################
+#Swping a perticular letter with another
+#test_list = ['Gfg', 'is', 'best', 'for', 'Geeks']
+
+# printing original lists
+#print("The original list is : " + str(test_list))
+
+# Swap elements in String list
+# using replace() + list comprehension
+#res = [sub.replace('G', '-').replace('f', 'G').replace('-', 'f') for sub in test_list]
+
+# printing result
+#print("List after performing character swaps : " + str(res))
+################################################################################################
+
+
+
+
+
+
+
+
+
+###############################################################################
+#def swap(Li):
+  #  Li[0],Li[-1] = Li[-1], Li[0]
+ #   return Li
+
+#list  = ['hello', 'man', 'heyy', 'meow', 'lol']
+#swap(list)
+
+#for i in list:
+ #   print(i)
+
+#print("After Swaping: ",swap(list))
+
+
+##################################################################################
+
+
+
+
+
+########################################################################################
+#a = int (input("Enter the first number: "))
+#b = int(input("Enter the second number: "))
+
+
+#print(max(a,b))
+
+#######################################################################################
+
+
+
+
+
+
+
+##########################################################################################
+
+#a = 2
+#b = 4
+
+# Use of ternary operator
+#print(a if a >= b else b)
+
+
+
+
+############################################################################################
+
+
+#Maximum of two numbers
+#a, b = 1,2
+#if(a>b):
+ #   print(a)
+#else:
+ #   print(b)
+
+###########################################################################################
+
+
+
+
+
+
+
+
+
+##############################################################################
+#native Method of calculating the size of a list
+
+#List  = [1,2,2,3,4,5,6,7,8,9]
+#count = 0
+#for i in List:
+ #   count += 1
+
+#print(count)
+################################################################################
+
+
+
+
+
+###################################################################################
+#Getting the length of a list
+
+
+#List = [1,2,3,4,5,6,7]
+#size  = len(List)
+#print("The Lenght of the list: "+str(size))
+
+
+
+####################################################################################
+
+
+
+
+#Swaping two number position given by the user
+
+#pos1 = int (input("Enter First Position: "))
+#pos2 = int (input("Enter First Position: "))
+
+#def swap(NewList,pos1,pos2):
+
+ #   NewList[pos1], NewList[pos2] =  NewList[pos2],  NewList[pos1]
+   # return NewList
+
+
+#List = [1,2,3,4,5,6,7,8,9]
+#pos1, pos2 = 1,5
+#print(swap(List, pos1-1,pos2-1))
+
+
+##############################################################################################
+
+
+
+
+
+############################################################################################
+#Swaping First and last number in a list
+#def swap(newList):
+  #  newList[0],newList[-1] = newList[-1], newList[0]
+ #   return newList
+
+
+#List = [1,2,3,4,5,6]
+#print("Afterswaping: ", swap(List))
+
+############################################################################################
+
+
+
+
+
+
+#############################################################################################
+#Swaping First and last number in a list
+
+
+#def swapList(newList):
+ #   size = len(newList)
+#
+    # Swapping
+ #   temp = newList[0]
+  #  newList[0] = newList[size - 1]
+    #newList[size - 1] = temp
+   # return newList
+
+
+# Driver code
+#newList = [12, 35, 9, 56, 24]
+#print("before swaping: ",newList)
+#print("after swaping:",swapList(newList))
+
+##############################################################################################
